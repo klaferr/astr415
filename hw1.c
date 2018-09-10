@@ -9,12 +9,13 @@ int main() {
 int i, num, N=7, lower = -3, upper = 3, count = 1; 
 float rnums[N];
 
-num = rand() %(upper +1 - lower)+lower;
 
-for (i=0, i<N,i++){
-  rnum[i]=num;
+for (i=0; i < N; i++){
+  num = rand() %(upper + 1 - lower) + lower; //generate the random number
+  rnums[i]=num; //assign the random number to the rnums array
+  printf("%f,", rnums[i]); 
 }
-
+printf("\n");
 /*
 //double arrays[]; 
 srand(time(NULL)); rnums = rand()%upper; 
